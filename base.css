@@ -275,8 +275,8 @@ nav div a:hover{
     font-size: 1.5vw;
 }
 .contact-section p span:nth-child(1), .contact-section p span:nth-child(2), 
-.contact-section p span:nth-child(3), .contact-section label:nth-child(5), 
-.contact-section label:nth-child(8){
+.contact-section p span:nth-child(3), .contact-section p:nth-child(5), 
+.contact-section p:nth-child(8){
     color: var(--aside-color);
     font-weight: 700;
     font-size: 1.5vw;
@@ -312,7 +312,7 @@ nav div a:hover{
     border-radius: 5px;
     margin-top: 1vw;
 }
-.contact-section label:nth-child(8){
+.contact-section p:nth-child(8){
     margin-top: 2vw;
     margin-bottom: 1vw;
 }
