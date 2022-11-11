@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--base-font);
+}
+
+body{
+    min-width: 100vw;
+}
+
+/* 1# menu design */
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+nav img {
+    /* width: 40%; */
+    width: 12vw;
+    height: auto;
+    /* margin-left: 10%; */
+    margin-left: 7vw;
+    /* margin-right: 20%; */
+    margin-right: 20vw;
+    margin-top: 2vw; 
+    margin-bottom: 2vw;
+}
+
+nav div a{
+    text-decoration: none;
+    margin-right: 7vw;
+    font-family: var(--base-font);  
+    color: var(--font-color);
+    font-size: 1.25vw; 
+    }
+nav div a:hover{
+    color: var(--hovernav-color);
+    font-weight: 700;
+} 
+
+
+
+/* 2# hero design  */
+.hero-image{
+    background-image:  url("images/hero.jpg");
+    width: 100vw;
+    height: 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative ;
+
+}
+.hero-image h1{
+    font-size: 5.5vw;
+    padding-top: 19vw;
+    padding-left: 9vw;
+}
+
+
+ /* 3# reputation-section */
+.reputation-section{
+    margin-bottom: 2vw;
+    margin-top: 10vw;
+}
+.reputation-section h2:first-child{
+    font-size: 2.5vw;
+    margin-top: 5vw;
+}
+.reputation-section article:nth-child(2), .reputation-section article:nth-child(3), .reputation-section article:nth-child(4){
+    margin-bottom: 8vw;
+    margin-top: 3vw;
+    width: 20vw;
+    height: 15vw;
+    border: 0.1vw solid var(--opacity-color);
+    padding: 1vw;
+    color: rgb(163 , 170 , 194, 0.8);
+}
+
+.reputation-section article:nth-child(2) h3, .reputation-section article:nth-child(3) h3, .reputation-section article:nth-child(4) h3{
+    color: black;
+}
+
+.reputation-section article h3{
+    margin: 1vw 0;
+    font-size: 1.5vw;
+}
+.reputation-section article img{
+    width: 3.5vw;
+    height: 3vw;
+}
+.reputation-section article p{
+    font-size: 1.25vw;
+}
+
+
+/* 4# About us design */
+.aboutUs-article{
+    margin-bottom: 10vw ;
+}
+.aboutUs-article section img{
+   margin-left: 5vw;
+   margin-right: 10vw;
+   width: 60vw;
+   height: auto;
+}
+
+.aboutUs-article aside{
+    border: 1px solid var(--aside-color);
+   width: 35vw;
+   height: 35vw;
+   background-color: var(--aside-color);
+   color: white;
+   padding-left: 2vw;
+   padding-right: 2vw;
+   margin-bottom: 5vw;
+   margin-left: 1.5vw;
+}
+
+.aboutUs-article aside h3{
+    font-size: 2.5vw;
+    margin-top: 2vw;
+   
+}
+.aboutUs-article aside p{
+    margin-top: 1.5vw;
+    font-size: 1.5vw;
+    font-family: var(--base-font);
+}
+
+.aboutUs-article aside p:nth-child(2){
+    padding-right: 0.2vw;
+}
+.aboutUs-article aside p:nth-child(3){
+  margin-bottom: 3vw;
+}
+
+.aboutUs-article aside button {
+    width: 15vw;
+    height: 3.5vw;
+    font-size: 1.25vw;
+    font-weight: 700;
+    color: var(--aside-color);
+    font-family: var(--base-font);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+/* 5# consultation-section */
+.consultation-section{
+    width: 100%;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+   background-image: url("images/consultation.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size:cover;
+   position: relative;  
+   color: white;
+}
+.consultation-section h3{
+    font-size: 2vw;
+    margin-top: 8vw;
+    margin-bottom: 2vw;
+    font-family: var(--base-font);
+}
+.consultation-section p{
+    font-family: var(--base-font);
+    font-size: 2vw;
+}
+.consultation-section p a{
+    color:white;
+    font-family: var(--base-font);
+}
+.consultation-section button {
+    width: 18vw;
+    height: 4vw;
+    font-weight: 700;
+    position: relative;
+    font-size: 1.5vw;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    margin-left: 45vw;
+}
+
+
+
+/* 6# comment-section */
+.comment-section{
+    background-color: var(--comment-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.comment-section h4, .comment-section p{
+    display: flex;
+    justify-content: center;
+}
+.comment-section h4{
+    font-size: 2.5vw;
+    font-family: var(--base-font);
+    padding-top: 3vw;
+    font-weight: 900;
+}
+.comment-section p{
+    font-family: var(--base-font);
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;    
+}
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comment-form input:first-child, .comment-form input:nth-child(3){
+    width: 45vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: var(--base-font);
+    color: var(--reputation-color);
+    margin:0 1vw;
+    border: 1px solid rgba(163, 170, 194, 0.5);
+    padding-top:0.2vw;
+    padding-left: 0.5vw;
+}
+.comment-form input:nth-child(5){
+    font-family: var(--base-font);
+    width: 45vw;
+    height: 10vw;
+    font-size: 1.5vw;
+    color: var(--reputation-color);
+    margin: 0.25vw 1vw;
+    padding-bottom: 7vw;
+    padding-left: 0.5vw;
+    border: 1px solid rgba(163, 170, 194, 0.5);
+}
+.comment-form input[type="text"]::-webkit-input-placeholder{
+    color: var(--reputation-color);
+    opacity: 0.4;
+}
+.comment-form input:nth-child(7){
+    width: 20vw;
+    height: 4vw;
+    font-size: 1.5vw;
+    font-weight: 900;
+    background-color: var(--aside-color);
+    color: white;
+    border: 1px solid var(--aside-color);
+    margin-bottom: 3vw;
+}
+#name-error, #email-error, #message-error{
+    font-family: var(--base-font);
+    font-size: 1vw;
+    color: red;
+}
+
+
+/* 7# contact section */
+.contact-section{
+    padding: 5vw;
+}
+.contact-section p{
+    font-size: 1.5vw;
+}
+.contact-section p span:nth-child(1), .contact-section p span:nth-child(2), 
+.contact-section p span:nth-child(3), .contact-section label:nth-child(5), 
+.contact-section label:nth-child(8){
+    color: var(--aside-color);
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+.contact-section p:nth-child(1){
+    margin-bottom: 1vw;
+}
+
+.contact-section input:nth-child(6){
+    height: 3.5vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    border: 1px solid rgba(163, 170, 194, 0.5);
+    border-radius: 5px;
+}
+.contact-section input[type="email"]::-webkit-input-placeholder
+{
+    color: var(--reputation-color);
+    opacity: 0.4;
+    font-size: 1.5vw;
+    font-weight: 300;
+    padding-left: 0.25vw;
+    font-family: var(--base-font);
+}
+
+.contact-section button:nth-child(7){
+    font-size: 1.8vw;
+    width: 10vw;
+    height: 3.5vw;
+    background-color: var(--hovernav-color);
+    color: white;
+    border: 1px solid var(--hovernav-color);
+    border-radius: 5px;
+    margin-top: 1vw;
+}
+.contact-section label:nth-child(8){
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+.contact-section a img:nth-child(9), .contact-section a img:nth-child(10), .contact-section a img:nth-child(11){
+    margin-top: 2vw;
+}
+
+/* 8# copyRight section */
+.copyRight-section{
+    background-color: var(--aside-color);
+    color: white;
+    height: 5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 6vw;
+}

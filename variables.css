@@ -1,0 +1,13 @@
+:root{
+    --base-font: 'Montserrat', sans-serif;
+    /* --accent-font:  */
+
+    --font-color: #292E3D;
+    --border-color: white;
+    --hovernav-color: #F9995D;
+    --reputation-color: #A3AAC2;
+    --opacity-color: rgb(163 , 170 , 194, 0.5);
+    --aside-color: #2947A9;
+    --comment-color: #F6F8F7;
+    --base-border: 1rem solid var(--border-color);
+}
