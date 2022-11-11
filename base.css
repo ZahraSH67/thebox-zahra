@@ -15,16 +15,13 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
     width: 100%;
 }
 nav img {
-    /* width: 40%; */
+
     width: 12vw;
     height: auto;
-    /* margin-left: 10%; */
     margin-left: 7vw;
-    /* margin-right: 20%; */
     margin-right: 20vw;
     margin-top: 2vw; 
     margin-bottom: 2vw;
@@ -234,7 +231,7 @@ nav div a:hover{
     padding-top:0.2vw;
     padding-left: 0.5vw;
 }
-.comment-form input:nth-child(5){
+.comment-form textarea:nth-child(5){
     font-family: var(--base-font);
     width: 45vw;
     height: 10vw;
@@ -249,6 +246,10 @@ nav div a:hover{
     color: var(--reputation-color);
     opacity: 0.4;
 }
+.comment-form textarea::-webkit-input-placeholder{
+    color: var(--reputation-color);
+    opacity: 0.4;
+}  
 .comment-form input:nth-child(7){
     width: 20vw;
     height: 4vw;

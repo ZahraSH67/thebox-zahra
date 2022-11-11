@@ -10,14 +10,14 @@ const messageInput = document.querySelector("#message-input")
 const messageError = document.querySelector("#message-error")
 const submitBtn = document.querySelector("#submit-button")
 
-commentForm?.addEventListener("submit", function(event){
+// commentForm?.addEventListener("submit", function(event){
+//     event.preventDefault()
+//     setSucces()
+// })
+
+
+submitBtn?.addEventListener("click", function(event){
     event.preventDefault()
-    setSucces()
-})
-
-
-submitBtn.addEventListener("click", checkInputs)
-function checkInputs(){
     if(nameInput.value === ""){
         nameError.innerText = "Please enter your name!"
     }else{
@@ -40,7 +40,7 @@ function checkInputs(){
         messageError.innerText = "Thank you for your message!"
         messageError.style.color = "green"
     } 
-}
+})
 
 function validateEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
